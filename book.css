@@ -1,0 +1,145 @@
+/* Reset أساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* الجسم العام */
+body {
+    background: linear-gradient(135deg, #00bfa5, #1de9b6);
+    color: #004d40;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* الهيدر */
+header {
+    background: rgba(0, 77, 64, 0.85);
+    color: #ffffff;
+    padding: 30px 15px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/* قسم تفاصيل الكتاب */
+.book-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 40px 25px;
+    max-width: 750px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    backdrop-filter: blur(15px);
+    transition: transform 0.5s;
+}
+
+.book-details:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* غلاف الكتاب */
+.book-details img#book-cover {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border: 4px solid rgba(255,255,255,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.book-details img#book-cover:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* اسم الكتاب */
+.book-details h2#book-name {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #004d40;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* المؤلف */
+.book-details p#book-author {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #00796b;
+}
+
+/* وصف الكتاب */
+.book-details p#book-desc {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.8;
+    color: #004d40;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+/* زر التحميل */
+.download-btn {
+    background: linear-gradient(135deg, #1de9b6, #00bfa5);
+    color: #004d40;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.download-btn:hover {
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* زر الرجوع */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #004d40;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.back-btn:hover {
+    color: #1de9b6;
+    transform: translateX(-5px);
+}
+
+/* الفوتر */
+footer {
+    background: rgba(0, 77, 64, 0.85);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+    font-size: 0.95rem;
+    backdrop-filter: blur(8px);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+}

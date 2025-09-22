@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة Memo</title>
+    <link rel="shortcut icon" href="books/mli.png" type="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========================= HEADER ========================= -->
+    <header class="site-header">
+    <div class="header-container">
+        <h1 class="site-title">مكتبة Venox</h1>
+        <div class="social-links">
+            <a class="youtube-link" href="https://www.youtube.com/@Memo_devo" target="_blank">
+                قناة صاحب الموقع
+            </a>
+            <a class="instagram-link" href="https://www.instagram.com/memo._.devo/" target="_blank">
+                حساب الإنستغرام
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- ========================= SEARCH ========================= -->
+    <div class="search-wrapper">
+        <input type="text" class="search-box" placeholder="ابحث عن كتاب أو مؤلف...">
+    </div>
+
+    <!-- ========================= BOOK GRID ========================= -->
+    <div id="books-container" class="grid"></div>
+
+    <!-- ========================= BOOK TEMPLATE ========================= -->
+    <template id="book-template">
+    <div class="book-card">
+        <img class="book-cover" src="" alt="">
+        <div class="book-info">
+            <h3 class="book-title"></h3>
+            <p class="book-author"></p>
+            <p class="book-description"></p>
+            <a class="book-details" href="book.html">تفاصيل</a>
+        </div>
+    </div>
+</template>
+
+<!-- ========================= MODAL ========================= -->
+<div id="welcome-modal" class="modal">
+    <div class="modal-content">
+        <h2>تنبيه</h2>
+        <p>
+            جميع الكتب الموجودة في هذا الموقع مأخوذة من مواقع أخرى.  
+            إذا كان أي كتاب يخصك موجود بدون موافقتك، يرجى التواصل مع صاحب الموقع.
+        </p>
+        <button id="accept-btn">موافق</button>
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
